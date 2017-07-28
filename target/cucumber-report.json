@@ -1,0 +1,163 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 5,
+            "value": "#Gherkin syntax in jobspec, Given When And Then, But"
+          }
+        ],
+        "line": 7,
+        "name": "See landing page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3585694193,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I launch the \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "url",
+                  "offset": 14
+                }
+              ],
+              "location": "landing_main.i_launch_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13187788,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see the \"Login\" page displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login",
+                  "offset": 11
+                }
+              ],
+              "location": "landing_main.i_see_the_page_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10663147859,
+              "status": "passed"
+            },
+            "match": {
+              "location": "landing_main.set_test()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Confirm place holders are displayed",
+        "description": "",
+        "id": "as-a-user,;confirm-place-holders-are-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 19635,
+              "status": "passed"
+            },
+            "match": {
+              "location": "landing_main.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 701182018,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click \"register\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "register",
+                  "offset": 9
+                }
+              ],
+              "location": "register.i_click_button(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35205697,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I confirm \"Email_Address\" text_field has a place holder of \"Enter email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email_Address",
+                  "offset": 11
+                },
+                {
+                  "val": "Enter email",
+                  "offset": 60
+                }
+              ],
+              "location": "place_holder_reg.i_confirm_text_field_has_a_place_holder_of(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23851067,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I confirm \"username\" text_field has a place holder of \"Enter username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 11
+                },
+                {
+                  "val": "Enter username",
+                  "offset": 55
+                }
+              ],
+              "location": "place_holder_reg.i_confirm_text_field_has_a_place_holder_of(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@testcompleted"
+          }
+        ]
+      }
+    ],
+    "name": "As a user,",
+    "description": "I want to be able to see the \r\nplace-holder on the registration page",
+    "id": "as-a-user,",
+    "keyword": "Feature",
+    "uri": "place_holder_reg.feature"
+  }
+]
